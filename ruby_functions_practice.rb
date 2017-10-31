@@ -55,9 +55,11 @@ def volume_of_cube(side_of_cube)
   return side_of_cube * side_of_cube * side_of_cube
 end
 
-# def volume_of_sphere(radius)
-#   return fraction * pi * (radius ** 3)
-# end
+def volume_of_sphere(radius)
+  pi = 3.14
+  fraction= 4/3
+  return (fraction * pi * (radius ** 3)).round(2)
+end
 
 def farenheit_to_celsius(temp)
   result = ( temp - 32 ) * (5/9.to_f)
